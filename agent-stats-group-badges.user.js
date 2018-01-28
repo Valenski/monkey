@@ -28,6 +28,7 @@ var requirements = [
     [3, 10, 20, 90, 150], // Guardian
     [5, 25, 100, 200, 500], // SpecOps
     [1, 3, 6, 10, 20], // Mission Day
+    [1, 5, 10, 25, 50], // NL1331 Meet
     [2000, 10000, 30000, 100000, 200000], // Hacker
     [200, 2000, 6000, 20000, 50000], // Translator
     [15, 30, 60, 180, 360], // Sojourner
@@ -62,6 +63,7 @@ var requirements2 = [
     [5000, 40000, 150000, 400000, 1000000], // Field-Master
     [5, 25, 100, 200, 500], // SpecOps
     [1, 3, 6, 10, 20], // Mission Day
+    [1, 5, 10, 25, 50], // NL1331 Meet
     [2000, 10000, 30000, 100000, 200000], // Hacker
     [200, 2000, 6000, 20000, 50000], // Translator
     [15, 30, 60, 180, 360], // Sojourner
@@ -73,7 +75,7 @@ var checkBoxStatus = document.getElementsByName('additional')[0].checked;
 if (checkBoxStatus === false) {
 $("#group > tbody > tr").each(function(i, tr){
     $("td", tr).each(function(j, td){
-        if ( 4 <= j && j <= 23 ) {
+        if ( 4 <= j && j <= 24 ) {
             var value = parseInt($(td).html().replace(/,/g, ""));
             var color = "";
             for ( var k = 4 ; 0 <= k ; k-- ) {
@@ -93,7 +95,7 @@ $("#group > tbody > tr").each(function(i, tr){
 } else if (checkBoxStatus === true) {
 $("#group > tbody > tr").each(function(i, tr){
     $("td", tr).each(function(j, td){
-        if ( 4 <= j && j <= 34 ) {
+        if ( 4 <= j && j <= 35 ) {
             var value2 = parseInt($(td).html().replace(/,/g, ""));
             var color2 = "";
             for ( var l = 4 ; 0 <= l ; l-- ) {
